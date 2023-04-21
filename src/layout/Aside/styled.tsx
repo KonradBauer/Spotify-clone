@@ -8,7 +8,7 @@ export const StyledAside = styled.div`
 `
 
 export const StyledLogo = styled(Logo)`
-  margin: 14px 6px;
-  width: 170px;
+  margin: 14px -30px;
+  width: 85%;
   height: 60px;
 `
