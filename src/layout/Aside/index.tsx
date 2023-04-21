@@ -1,8 +1,10 @@
 import React from "react";
-import {StyledAside} from "./styled";
+import {StyledAside, StyledLogo} from "./styled";
 
 export const Aside: React.FC = () => {
     return (
-        <StyledAside/>
+        <StyledAside>
+            <StyledLogo/>
+        </StyledAside>
     )
 }
