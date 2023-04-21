@@ -1,9 +1,14 @@
 import React from 'react';
-import {Container} from "./layout/Container";
+import {GlobalContainer} from "./layout/GlobalContainer";
+import {Aside} from "./layout/Aside";
+import {Main} from "./layout/Main";
 
-function App() {
+const App: React.FC = () => {
     return (
-        <Container/>
+        <GlobalContainer>
+            <Aside/>
+            <Main/>
+        </GlobalContainer>
     );
 }
 
