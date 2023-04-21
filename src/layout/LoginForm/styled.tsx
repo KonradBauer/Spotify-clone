@@ -41,7 +41,7 @@ export const Label = styled.label`
 `
 export const Input = styled.input`
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   width: 400px;
   height: 50px;
   border-radius: 5px;
@@ -61,5 +61,9 @@ export const LogInButton = styled.button`
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.99);
   }
 `
