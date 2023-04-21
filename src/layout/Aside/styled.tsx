@@ -18,9 +18,10 @@ export const List = styled.ul`
   font-weight: bold;
   font-size: 14px;
   list-style-type: none;
-  margin-bottom: 450px;
+  margin-bottom: 450px;;
   display: flex;
   flex-direction: column;
+  padding: 0 0 0 30px;
 
 `
 
@@ -35,9 +36,12 @@ export const StyledHouse = styled(House)`margin-right: 15px`
 export const StyledLib = styled(Lib)`margin-right: 15px`
 export const StyledLoupe = styled(Loupe)`margin-right: 15px`
 export const Home = styled.span`
+  display: flex;
+  justify-content: flex-start;
   width: 255px;
   height: 40px;
   cursor: pointer;
+
 
   &:active {
     color: ${({theme}) => theme.color.white};
@@ -47,6 +51,8 @@ export const Home = styled.span`
 `
 
 export const Search = styled.span`
+  display: flex;
+  justify-content: flex-start;
   width: 255px;
   height: 40px;
   cursor: pointer;
@@ -59,6 +65,8 @@ export const Search = styled.span`
 `
 
 export const Library = styled.span`
+  display: flex;
+  justify-content: flex-start;
   width: 255px;
   height: 40px;
   cursor: pointer;
