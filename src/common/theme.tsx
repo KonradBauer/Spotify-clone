@@ -1,20 +1,3 @@
-interface Color {
-    codGray: string;
-    black: string;
-}
-
-interface Breakpoints {
-    theSmallestMobileView: number;
-    mobileS: number;
-    mobileM: number;
-    mobileMax: number;
-    tabletVerticalMax: number;
-    beforeMobileMax: number;
-    tabletHorizontalMax: number;
-    desktopHorizontal: number;
-    desktopHorizontalMax: number;
-}
-
 export const theme = {
     color: {
         codGray: "#121212",

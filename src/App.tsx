@@ -11,5 +11,4 @@ const App: React.FC = () => {
         </GlobalContainer>
     );
 }
-
 export default App;
