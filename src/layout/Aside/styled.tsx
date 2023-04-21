@@ -27,6 +27,7 @@ export const List = styled.ul`
 
 
 export const StyledLogo = styled(Logo)`
+  color: ${({theme}) => theme.color.white};
   margin: 14px -10px;
   width: 75%;
   height: 60px;

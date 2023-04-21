@@ -4,6 +4,7 @@ export const theme = {
         black: "#000000",
         white: "#FFFFFF",
         nobel: "#B3B3B3",
+        malachite: "#1ed760"
     },
 
     breakpoints: {
