@@ -41,6 +41,7 @@ export const Home = styled.span`
 
   &:active {
     color: ${({theme}) => theme.color.white};
+    transform: scale(0.99);
   }
 
 `
@@ -52,6 +53,7 @@ export const Search = styled.span`
 
   &:active {
     color: ${({theme}) => theme.color.white};
+    transform: scale(0.99);
   }
 
 `
@@ -63,6 +65,7 @@ export const Library = styled.span`
 
   &:active {
     color: ${({theme}) => theme.color.white};
+    transform: scale(0.99);
   }
 
 `
