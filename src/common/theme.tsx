@@ -1,7 +1,9 @@
 export const theme = {
     color: {
         codGray: "#121212",
-        black: "#000000"
+        black: "#000000",
+        white: "#FFFFFF",
+        nobel: "#B3B3B3",
     },
 
     breakpoints: {
