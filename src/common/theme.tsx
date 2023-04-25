@@ -6,6 +6,7 @@ export const theme = {
     nobel: "#B3B3B3",
     malachite: "#1ed760",
     mineShaft: "#242424",
+    mineShaftLighter: "#383838",
   },
 
   breakpoints: {
