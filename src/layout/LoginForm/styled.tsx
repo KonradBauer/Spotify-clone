@@ -15,27 +15,12 @@ export const StyledLogo = styled(Logo)`
   width: 100%;
   margin-top: 20px;
 `;
-
 export const Line = styled.span`
   border: 1px solid;
   width: 100%;
   margin-top: 20px;
   color: ${({ theme }) => theme.color.nobel};
 `;
-
-export const Label = styled.label`
-  font-weight: bold;
-  font-size: 15px;
-`;
-export const Input = styled.input`
-  font-weight: bold;
-  font-size: 20px;
-  width: 400px;
-  height: 50px;
-  border-radius: 5px;
-  padding: 10px;
-`;
-
 export const LogInButton = styled.a`
   display: flex;
   justify-content: center;
