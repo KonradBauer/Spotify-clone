@@ -53,11 +53,12 @@ export const LogInButton = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  letter-spacing: 1.5px;
   margin-top: 50px;
   width: 400px;
   height: 50px;
   background: ${({ theme }) => theme.color.malachite};
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.black};
   border-radius: 100px;
   border: none;
   transition: 0.1s;
