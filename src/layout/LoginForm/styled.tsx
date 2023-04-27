@@ -48,13 +48,17 @@ export const Input = styled.input`
   padding: 10px;
 `;
 
-export const LogInButton = styled.button`
+export const LogInButton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   margin-top: 50px;
   width: 400px;
   height: 50px;
   background: ${({ theme }) => theme.color.malachite};
-  color: ${({ theme }) => theme.color.black};
-  border-radius: 50px;
+  color: ${({ theme }) => theme.color.white};
+  border-radius: 100px;
   border: none;
   transition: 0.1s;
   font-weight: bold;
