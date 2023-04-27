@@ -12,8 +12,7 @@ export const Container = styled.div`
 `;
 export const StyledLogo = styled(Logo)`
   color: ${({ theme }) => theme.color.black}
-  width: 150px;
-  height: 70px;
+  width: 100%;
   margin-top: 20px;
 `;
 
@@ -23,18 +22,7 @@ export const Line = styled.span`
   margin-top: 20px;
   color: ${({ theme }) => theme.color.nobel};
 `;
-export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 100px;
-  width: 500px;
-  height: 200px;
-  border: 6px solid rgba(209, 213, 218, 0.1);
-  border-radius: 5px;
-  box-shadow: 8px 7px 23px -3px rgba(66, 68, 90, 1);
-`;
+
 export const Label = styled.label`
   font-weight: bold;
   font-size: 15px;
@@ -54,7 +42,7 @@ export const LogInButton = styled.a`
   align-items: center;
   text-decoration: none;
   letter-spacing: 1.5px;
-  margin-top: 50px;
+  margin-top: 150px;
   width: 400px;
   height: 50px;
   background: ${({ theme }) => theme.color.malachite};
