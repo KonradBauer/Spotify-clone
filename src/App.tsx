@@ -4,9 +4,13 @@ import { Aside } from "./layout/Aside";
 import { Main } from "./layout/Main";
 import { LoginForm } from "./layout/LoginForm";
 import { getTokenFromUrl } from "./core/getAPI";
+import SpotifyWebApi from "spotify-web-api-js";
+import { useDataLayerValue } from "./core/DataLayer";
+
+const spotify = new SpotifyWebApi();
 
 const App: React.FC = () => {
-  const [token, setToken] = useState<string | null>(null);
+  const [{ user, token }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash: any = getTokenFromUrl();
@@ -14,7 +18,19 @@ const App: React.FC = () => {
     const _token: string = hash.access_token;
 
     if (_token) {
-      setToken(_token);
+      dispatch({
+        type: "SET_TOKEN",
+        token: _token,
+      });
+
+      spotify.setAccessToken(_token);
+
+      spotify.getMe().then((user) => {
+        dispatch({
+          type: "SET_USER",
+          user: user,
+        });
+      });
     }
   }, []);
 
