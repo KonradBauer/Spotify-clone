@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { GlobalContainer } from "./layout/GlobalContainer";
 import { Aside } from "./layout/Aside";
 import { Main } from "./layout/Main";
