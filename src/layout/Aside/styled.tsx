@@ -94,7 +94,15 @@ export const Library = styled.span`
 `;
 
 export const Playlist = styled.span`
-  font-size: large;
+  font-size: 12px;
+  letter-spacing: 1.5px;
   margin-top: 20px;
-  font-weight: normal;
+  color: ${({ theme }) => theme.color.white};
+`;
+
+export const Line = styled.hr`
+  width: 85%;
+  margin-right: 100px;
+  border: 1px solid;
+  color: ${({ theme }) => theme.color.mineShaft};
 `;

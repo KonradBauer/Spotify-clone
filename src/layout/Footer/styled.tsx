@@ -6,5 +6,5 @@ export const Player = styled.div`
   position: fixed;
   bottom: 0;
   padding: 20px;
-  background-color: ${({ theme }) => theme.color.mineShaft};
+  background-color: ${({ theme }) => theme.color.mineShaftDark};
 `;

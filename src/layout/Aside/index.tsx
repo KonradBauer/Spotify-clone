@@ -2,6 +2,7 @@ import React from "react";
 import {
   Home,
   Library,
+  Line,
   List,
   Playlist,
   Search,
@@ -33,7 +34,8 @@ export const Aside: React.FC = () => {
           <StyledLib />
           {"Biblioteka"}
         </Library>
-        <Playlist>{"Playlists"}</Playlist>
+        <Playlist>{"PLAYLISTS"}</Playlist>
+        <Line />
       </List>
     </StyledAside>
   );
