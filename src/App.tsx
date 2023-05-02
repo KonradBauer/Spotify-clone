@@ -6,6 +6,7 @@ import { LoginForm } from "./layout/LoginForm";
 import { getTokenFromUrl } from "./core/getAPI";
 import SpotifyWebApi from "spotify-web-api-js";
 import { useDataLayerValue } from "./core/DataLayer";
+import { Footer } from "./layout/Footer/Footer";
 
 const spotify = new SpotifyWebApi();
 
@@ -38,6 +39,7 @@ const App: React.FC = () => {
     <GlobalContainer>
       <Aside />
       <Main />
+      <Footer />
     </GlobalContainer>
   ) : (
     <LoginForm />
