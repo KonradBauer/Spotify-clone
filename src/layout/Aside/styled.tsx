@@ -106,3 +106,14 @@ export const Line = styled.hr`
   border: 1px solid;
   color: ${({ theme }) => theme.color.mineShaft};
 `;
+
+export const PlaylistContent = styled.ul`
+  color: ${({ theme }) => theme.color.white};
+  font-weight: bold;
+  font-size: 14px;
+  list-style-type: none;
+  margin-bottom: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 30px;
+`;

@@ -5,6 +5,7 @@ import {
   Line,
   List,
   Playlist,
+  PlaylistContent,
   Search,
   StyledAside,
   StyledHouse,
@@ -12,12 +13,15 @@ import {
   StyledLogo,
   StyledLoupe,
 } from "./styled";
+import { useDataLayerValue } from "../../core/DataLayer";
 
-interface Text {
-  text: string;
+interface Playlist {
+  name: string;
 }
 
 export const Aside: React.FC = () => {
+  const [{ playlists }, dispatch] = useDataLayerValue();
+
   return (
     <StyledAside>
       <StyledLogo />
@@ -36,6 +40,9 @@ export const Aside: React.FC = () => {
         </Library>
         <Playlist>{"PLAYLISTS"}</Playlist>
         <Line />
+        {playlists?.items?.map((playlist: Playlist) => (
+          <PlaylistContent title={playlist.name} />
+        ))}
       </List>
     </StyledAside>
   );

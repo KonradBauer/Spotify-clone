@@ -10,6 +10,7 @@ interface Action {
   type: string;
   user: { name: string; email: string };
   token: string;
+  playlists: string;
 }
 
 export const initialState: State = {
@@ -35,6 +36,13 @@ export const reducer = (state: State, action: Action) => {
         ...state,
         token: action.token,
       };
+
+    case "SET_PLAYLISTS":
+      return {
+        ...state,
+        playlists: action.playlists,
+      };
+
     default:
       return state;
   }
