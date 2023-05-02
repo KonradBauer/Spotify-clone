@@ -5,7 +5,6 @@ import {
   Line,
   List,
   Playlist,
-  PlaylistContent,
   Search,
   StyledAside,
   StyledHouse,
@@ -41,7 +40,7 @@ export const Aside: React.FC = () => {
         <Playlist>{"PLAYLISTS"}</Playlist>
         <Line />
         {playlists?.items?.map((playlist: Playlist) => (
-          <PlaylistContent title={playlist.name} />
+          <div>{playlist.name}</div>
         ))}
       </List>
     </StyledAside>
