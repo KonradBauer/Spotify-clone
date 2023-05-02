@@ -1,22 +1,6 @@
 import React from "react";
-import { ContentContainer, H2, StyledMain } from "./styled";
-import { Box } from "../Tile/styled";
+import { StyledMain } from "./styled";
 
 export const Main: React.FC = () => {
-  return (
-    <StyledMain>
-      <ContentContainer>
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-        <Box />
-      </ContentContainer>
-    </StyledMain>
-  );
+  return <StyledMain />;
 };

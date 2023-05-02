@@ -92,3 +92,9 @@ export const Library = styled.span`
     transform: scale(0.99);
   }
 `;
+
+export const Playlist = styled.span`
+  font-size: large;
+  margin-top: 20px;
+  font-weight: normal;
+`;
