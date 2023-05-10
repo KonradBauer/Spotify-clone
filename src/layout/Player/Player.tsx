@@ -1,6 +1,12 @@
 import React from "react";
-import { PlayerContent } from "./styled";
+import { CenterContent, LeftContent, PlayerContent, RightContent } from "./styled";
 
-const Player = () => {
-  return <PlayerContent />;
+export const Player = () => {
+  return (
+    <PlayerContent>
+      <LeftContent />
+      <CenterContent />
+      <RightContent />
+    </PlayerContent>
+  );
 };
