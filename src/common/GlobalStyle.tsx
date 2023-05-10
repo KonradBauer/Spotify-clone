@@ -1,4 +1,4 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -13,4 +13,4 @@ export const GlobalStyle = createGlobalStyle`
       font-family: 'Inter', sans-serif;
       font-family: 'Open Sans', sans-serif;
     }
-`
+`;
