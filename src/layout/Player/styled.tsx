@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const PlayerContent = styled.div`
-  display: flex;
-`;
-
 export const LeftContent = styled.div`
   display: flex;
 `;

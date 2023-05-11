@@ -1,6 +1,11 @@
 import React from "react";
-import { Player } from "./styled";
+import { FooterLayout } from "./styled";
+import { Player } from "../Player/Player";
 
 export const Footer: React.FC = () => {
-  return <Player />;
+  return (
+    <FooterLayout>
+      <Player />
+    </FooterLayout>
+  );
 };

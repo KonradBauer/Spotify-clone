@@ -1,12 +1,17 @@
-import React from "react";
-import { CenterContent, LeftContent, PlayerContent, RightContent } from "./styled";
+import { CenterContent, LeftContent, RightContent } from "./styled";
 
 export const Player = () => {
   return (
-    <PlayerContent>
-      <LeftContent />
-      <CenterContent />
-      <RightContent />
-    </PlayerContent>
+    <>
+      <LeftContent>
+        <p>Album and song details</p>
+      </LeftContent>
+      <CenterContent>
+        <p>Player</p>
+      </CenterContent>
+      <RightContent>
+        <p>Volume controls</p>
+      </RightContent>
+    </>
   );
 };
