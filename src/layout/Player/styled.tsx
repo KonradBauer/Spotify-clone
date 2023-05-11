@@ -6,6 +6,9 @@ export const LeftContent = styled.div`
 
 export const CenterContent = styled.div`
   display: flex;
+  color: ${({ theme }) => theme.color.white};
+  align-items: center;
+  gap: 30px;
 `;
 
 export const RightContent = styled.div`
