@@ -106,3 +106,7 @@ export const Line = styled.hr`
   border: 1px solid;
   color: ${({ theme }) => theme.color.mineShaft};
 `;
+
+export const PlaylistStyle = styled.div`
+  margin-bottom: 10px;
+`;
