@@ -1,9 +1,13 @@
-import { CenterContent, LeftContent, RightContent } from "./styled";
-import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import SkipNextIcon from "@mui/icons-material/SkipNext";
-import ShuffleIcon from "@mui/icons-material/Shuffle";
-import RepeatIcon from "@mui/icons-material/Repeat";
+import {
+  CenterContent,
+  LeftContent,
+  RightContent,
+  StyledPlayCircleOutlineIcon,
+  StyledRepeatIcon,
+  StyledShuffleIcon,
+  StyledSkipNextIcon,
+  StyledSkipPreviousIcon,
+} from "./styled";
 import { Slider, Grid } from "@mui/material";
 import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
 import VolumeDownIcon from "@mui/icons-material/VolumeDown";
@@ -15,11 +19,11 @@ export const Player = () => {
         <p>Album and song details</p>
       </LeftContent>
       <CenterContent>
-        <ShuffleIcon />
-        <SkipPreviousIcon />
-        <PlayCircleOutlineIcon fontSize="large" />
-        <SkipNextIcon />
-        <RepeatIcon />
+        <StyledShuffleIcon />
+        <StyledSkipPreviousIcon />
+        <StyledPlayCircleOutlineIcon fontSize="large" />
+        <StyledSkipNextIcon />
+        <StyledRepeatIcon />
       </CenterContent>
       <RightContent>
         <>
