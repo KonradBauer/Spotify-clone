@@ -4,6 +4,9 @@ import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
 import ShuffleIcon from "@mui/icons-material/Shuffle";
 import RepeatIcon from "@mui/icons-material/Repeat";
+import { Slider, Grid } from "@mui/material";
+import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
+import VolumeDownIcon from "@mui/icons-material/VolumeDown";
 
 export const Player = () => {
   return (
@@ -19,7 +22,19 @@ export const Player = () => {
         <RepeatIcon />
       </CenterContent>
       <RightContent>
-        <p>Volume controls</p>
+        <>
+          <Grid container spacing={2}>
+            <Grid item>
+              <PlaylistPlayIcon />
+            </Grid>
+            <Grid item>
+              <VolumeDownIcon />
+            </Grid>
+            <Grid item xs>
+              <Slider />
+            </Grid>
+          </Grid>
+        </>
       </RightContent>
     </>
   );

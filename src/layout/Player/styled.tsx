@@ -15,4 +15,7 @@ export const CenterContent = styled.div`
 
 export const RightContent = styled.div`
   display: flex;
+  color: ${({ theme }) => theme.color.white};
+  align-items: center;
+  width: 200px;
 `;
