@@ -8,7 +8,9 @@ export const CenterContent = styled.div`
   display: flex;
   color: ${({ theme }) => theme.color.white};
   align-items: center;
-  gap: 30px;
+  justify-content: space-between;
+  width: 300px;
+  padding: 0 20px;
 `;
 
 export const RightContent = styled.div`
