@@ -11,7 +11,7 @@ export const Container = styled.div`
   margin: 0 auto;
 `;
 export const StyledLogo = styled(Logo)`
-  color: ${({ theme }) => theme.color.black}
+  color: ${({ theme }) => theme.color.black};
   width: 100%;
   margin-top: 20px;
 `;

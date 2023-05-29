@@ -29,6 +29,11 @@ export const StyledPlayCircleOutlineIcon = styled(PlayCircleOutlineIcon)`
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.99);
   }
 `;
 
@@ -36,6 +41,11 @@ export const StyledShuffleIcon = styled(ShuffleIcon)`
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.99);
   }
 `;
 
@@ -43,6 +53,11 @@ export const StyledRepeatIcon = styled(RepeatIcon)`
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.99);
   }
 `;
 
@@ -50,6 +65,11 @@ export const StyledSkipPreviousIcon = styled(SkipPreviousIcon)`
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.99);
   }
 `;
 
@@ -57,5 +77,10 @@ export const StyledSkipNextIcon = styled(SkipNextIcon)`
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.99);
   }
 `;
