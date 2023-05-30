@@ -8,6 +8,7 @@ export const theme = {
     mineShaft: "#242424",
     mineShaftDark: "#282828",
     mineShaftLighter: "#383838",
+    gray: "#808080",
   },
 
   breakpoints: {
