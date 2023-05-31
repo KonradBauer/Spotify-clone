@@ -36,7 +36,10 @@ export const RightSide = styled.div`
   display: flex;
   justify-self: flex-end;
   color: ${({ theme }) => theme.color.white};
-  gap: 5px;
-  margin-left: 10px;
+  gap: 10px;
   cursor: pointer;
+`;
+
+export const RoundedImage = styled.img`
+  border-radius: 50%;
 `;
