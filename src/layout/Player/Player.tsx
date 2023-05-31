@@ -35,7 +35,7 @@ export const Player = () => {
               <VolumeDownIcon />
             </Grid>
             <Grid item xs>
-              <Slider />
+              <Slider defaultValue={100} />
             </Grid>
           </Grid>
         </>

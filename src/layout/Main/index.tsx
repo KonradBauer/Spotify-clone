@@ -1,11 +1,11 @@
 import React from "react";
 import { Header, Input, LeftSide, RightSide, RoundedImage, StyledMain } from "./styled";
-import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import { useDataLayerValue } from "../../core/DataLayer";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 
 export const Main: React.FC = () => {
-  const [{ user }] = useDataLayerValue();
+  const [{ user }, dispatch] = useDataLayerValue();
 
   return (
     <StyledMain>
