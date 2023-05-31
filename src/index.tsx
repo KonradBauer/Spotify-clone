@@ -11,8 +11,8 @@ import { initialState, reducer } from "./core/reducer";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <DataLayer initialState={initialState} reducer={reducer}>
         <App />
       </DataLayer>
