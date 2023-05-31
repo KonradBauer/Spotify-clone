@@ -40,7 +40,7 @@ const App: React.FC = () => {
         })
       );
     }
-  }, []);
+  }, [dispatch]);
 
   return token ? (
     <GlobalContainer>

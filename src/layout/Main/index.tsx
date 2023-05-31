@@ -2,6 +2,7 @@ import React from "react";
 import { Header, Input, LeftSide, RightSide, RoundedImage, StyledMain } from "./styled";
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import { useDataLayerValue } from "../../core/DataLayer";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 export const Main: React.FC = () => {
   const [{ user }] = useDataLayerValue();
@@ -13,10 +14,16 @@ export const Main: React.FC = () => {
           <SearchSharpIcon />
           <Input placeholder="Search for Artists, Songs, or Podcasts" type="text" />
         </LeftSide>
-        <RightSide>
-          <RoundedImage src={user?.images[0]?.url} alt={user?.display_name} />
-          <span>{user?.display_name}</span>
-        </RightSide>
+        {user ? (
+          <RightSide>
+            <RoundedImage src={user.images[0].url} alt={user.display_name} />
+            <span>{user.display_name}</span>
+          </RightSide>
+        ) : (
+          <RightSide>
+            <AccountCircleIcon />
+          </RightSide>
+        )}
       </Header>
     </StyledMain>
   );
