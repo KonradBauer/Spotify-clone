@@ -42,4 +42,6 @@ export const RightSide = styled.div`
 
 export const RoundedImage = styled.img`
   border-radius: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
 `;
