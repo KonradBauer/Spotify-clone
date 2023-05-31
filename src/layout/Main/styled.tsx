@@ -16,6 +16,7 @@ export const Header = styled.div`
 export const Input = styled.input`
   border: none;
   width: 100%;
+  outline: none;
 `;
 
 export const LeftSide = styled.div`
