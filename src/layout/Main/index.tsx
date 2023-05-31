@@ -5,7 +5,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 
 export const Main: React.FC = () => {
-  const [{ user }, dispatch] = useDataLayerValue();
+  const [{ user }] = useDataLayerValue();
 
   return (
     <StyledMain>

@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   CenterContent,
   LeftContent,
@@ -7,12 +8,30 @@ import {
   StyledShuffleIcon,
   StyledSkipNextIcon,
   StyledSkipPreviousIcon,
+  StyledVolumeDownIcon,
+  StyledVolumeOffIcon,
+  StyledVolumeUpIcon,
 } from "./styled";
 import { Slider, Grid } from "@mui/material";
 import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
-import VolumeDownIcon from "@mui/icons-material/VolumeDown";
 
 export const Player = () => {
+  const [volume, setVolume] = useState(100);
+  const [prevVolume, setPrevVolume] = useState(100);
+
+  const handleVolumeChange = (event: any, newValue: any) => {
+    setVolume(newValue);
+  };
+
+  const handleVolumeClick = () => {
+    if (volume === 0) {
+      setVolume(prevVolume);
+    } else {
+      setPrevVolume(volume);
+      setVolume(0);
+    }
+  };
+
   return (
     <>
       <LeftContent>
@@ -26,19 +45,23 @@ export const Player = () => {
         <StyledRepeatIcon />
       </CenterContent>
       <RightContent>
-        <>
-          <Grid container spacing={2}>
-            <Grid item>
-              <PlaylistPlayIcon />
-            </Grid>
-            <Grid item>
-              <VolumeDownIcon />
-            </Grid>
-            <Grid item xs>
-              <Slider defaultValue={100} />
-            </Grid>
+        <Grid container spacing={2}>
+          <Grid item>
+            <PlaylistPlayIcon />
           </Grid>
-        </>
+          <Grid item onClick={handleVolumeClick}>
+            {volume === 0 ? (
+              <StyledVolumeOffIcon />
+            ) : volume >= 50 ? (
+              <StyledVolumeUpIcon />
+            ) : (
+              <StyledVolumeDownIcon />
+            )}
+          </Grid>
+          <Grid item xs>
+            <Slider value={volume} onChange={handleVolumeChange} />
+          </Grid>
+        </Grid>
       </RightContent>
     </>
   );
