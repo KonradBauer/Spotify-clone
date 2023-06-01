@@ -11,6 +11,9 @@ import PauseCircleOutlineIcon from "@mui/icons-material/PauseCircleOutline";
 
 export const LeftContent = styled.div`
   display: flex;
+  color: ${({ theme }) => theme.color.white};
+  align-items: center;
+  width: 300px;
 `;
 
 export const CenterContent = styled.div`
@@ -28,6 +31,24 @@ export const RightContent = styled.div`
   align-items: center;
   width: 200px;
 `;
+
+export const AlbumLogo = styled.img`
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: cover;
+`;
+
+export const SongInfo = styled.div`
+  font-size: 10px;
+`;
+
+export const SongTitle = styled.div`
+  font-size: 16px;
+  font-weight: bold;
+`;
+
+export const Artist = styled.div``;
 
 export const StyledPlayCircleOutlineIcon = styled(PlayCircleOutlineIcon)`
   &:hover {

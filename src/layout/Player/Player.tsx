@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import {
+  AlbumLogo,
+  Artist,
   CenterContent,
   LeftContent,
   RightContent,
+  SongInfo,
+  SongTitle,
   StyledPauseCircleOutlineIcon,
   StyledPlayCircleOutlineIcon,
   StyledRepeatIcon,
@@ -38,12 +42,17 @@ export const Player = () => {
     setPlayStatus(!playStatus);
   };
 
-  console.log(playStatus);
-
   return (
     <>
       <LeftContent>
-        <p>Album and song details</p>
+        <AlbumLogo
+          src="https://cdns-images.dzcdn.net/images/cover/b89c20012cccb051c8a4e04d98386f95/350x350.jpg"
+          alt="Album Cover"
+        ></AlbumLogo>
+        <SongInfo>
+          <SongTitle>Yeah!</SongTitle>
+          <Artist>Usher</Artist>
+        </SongInfo>
       </LeftContent>
       <CenterContent>
         <StyledShuffleIcon />

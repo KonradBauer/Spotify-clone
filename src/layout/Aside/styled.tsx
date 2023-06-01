@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../../common/images/logo.svg";
 import { ReactComponent as House } from "../../common/images/home.svg";
-import { ReactComponent as HomeActive } from "../../common/images/home-active.svg";
+// import { ReactComponent as HomeActive } from "../../common/images/home-active.svg";
 import { ReactComponent as Loupe } from "../../common/images/loupe.svg";
-import { ReactComponent as LoupeActive } from "../../common/images/loupe-active.svg";
+// import { ReactComponent as LoupeActive } from "../../common/images/loupe-active.svg";
 import { ReactComponent as Lib } from "../../common/images/lib.svg";
-import { ReactComponent as LibActive } from "../../common/images/lib-active.svg";
+// import { ReactComponent as LibActive } from "../../common/images/lib-active.svg";
 
 export const StyledAside = styled.div`
   display: grid;
