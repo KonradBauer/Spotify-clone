@@ -46,3 +46,28 @@ export const RoundedImage = styled.img`
   aspect-ratio: 1;
   object-fit: cover;
 `;
+
+export const MainBody = styled.div`
+  display: block;
+  margin-top: -250px;
+  padding: 10px;
+`;
+
+export const MainBodyContent = styled.div`
+  display: flex;
+  align-items: flex-end;
+`;
+
+export const ContentInfo = styled.div`
+  margin-left: 30px;
+  color: ${({ theme }) => theme.color.white};
+`;
+
+export const ContentImage = styled.img`
+  width: 18vw;
+`;
+
+export const BigText = styled.span`
+  font-size: 70px;
+  flex-wrap: wrap;
+`;
