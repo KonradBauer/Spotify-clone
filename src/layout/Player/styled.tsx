@@ -7,6 +7,7 @@ import SkipNextIcon from "@mui/icons-material/SkipNext";
 import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import VolumeOffIcon from "@mui/icons-material/VolumeOff";
 import VolumeDownIcon from "@mui/icons-material/VolumeDown";
+import PauseCircleOutlineIcon from "@mui/icons-material/PauseCircleOutline";
 
 export const LeftContent = styled.div`
   display: flex;
@@ -113,6 +114,18 @@ export const StyledVolumeUpIcon = styled(VolumeUpIcon)`
 `;
 
 export const StyledVolumeDownIcon = styled(VolumeDownIcon)`
+  &:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+`;
+
+export const StyledPauseCircleOutlineIcon = styled(PauseCircleOutlineIcon)`
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.2);

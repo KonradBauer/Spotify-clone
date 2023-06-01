@@ -3,6 +3,7 @@ import {
   CenterContent,
   LeftContent,
   RightContent,
+  StyledPauseCircleOutlineIcon,
   StyledPlayCircleOutlineIcon,
   StyledRepeatIcon,
   StyledShuffleIcon,
@@ -18,6 +19,7 @@ import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
 export const Player = () => {
   const [volume, setVolume] = useState(100);
   const [prevVolume, setPrevVolume] = useState(100);
+  const [playStatus, setPlayStatus] = useState(false);
 
   const handleVolumeChange = (event: any, newValue: any) => {
     setVolume(newValue);
@@ -32,6 +34,12 @@ export const Player = () => {
     }
   };
 
+  const togglePlayStatus = () => {
+    setPlayStatus(!playStatus);
+  };
+
+  console.log(playStatus);
+
   return (
     <>
       <LeftContent>
@@ -40,7 +48,13 @@ export const Player = () => {
       <CenterContent>
         <StyledShuffleIcon />
         <StyledSkipPreviousIcon />
-        <StyledPlayCircleOutlineIcon fontSize="large" />
+        <span onClick={togglePlayStatus}>
+          {playStatus ? (
+            <StyledPlayCircleOutlineIcon fontSize="large" />
+          ) : (
+            <StyledPauseCircleOutlineIcon fontSize="large" />
+          )}
+        </span>
         <StyledSkipNextIcon />
         <StyledRepeatIcon />
       </CenterContent>
