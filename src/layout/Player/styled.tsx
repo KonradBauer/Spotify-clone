@@ -60,117 +60,99 @@ export const Artist = styled.div`
 
 export const StyledPlayCircleOutlineIcon = styled(PlayCircleOutlineIcon)`
   &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
     cursor: pointer;
     color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
-    transform: scale(0.99);
-  }
-`;
-
-export const StyledShuffleIcon = styled(ShuffleIcon)`
-  &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  &:active {
-    transform: scale(0.99);
-  }
-`;
-
-export const StyledRepeatIcon = styled(RepeatIcon)`
-  &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  &:active {
-    transform: scale(0.99);
-  }
-`;
-
-export const StyledSkipPreviousIcon = styled(SkipPreviousIcon)`
-  &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  &:active {
-    transform: scale(0.99);
-  }
-`;
-
-export const StyledSkipNextIcon = styled(SkipNextIcon)`
-  &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  &:active {
-    transform: scale(0.99);
-  }
-`;
-
-export const StyledVolumeOffIcon = styled(VolumeOffIcon)`
-  &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  &:active {
-    transform: scale(0.99);
-  }
-`;
-
-export const StyledVolumeUpIcon = styled(VolumeUpIcon)`
-  &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  &:active {
-    transform: scale(0.99);
-  }
-`;
-
-export const StyledVolumeDownIcon = styled(VolumeDownIcon)`
-  &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
-    cursor: pointer;
-    color: ${({ theme }) => theme.color.white};
-  }
-
-  &:active {
-    transform: scale(0.99);
+    transform: scale(0.9);
   }
 `;
 
 export const StyledPauseCircleOutlineIcon = styled(PauseCircleOutlineIcon)`
   &:hover {
-    transition: 0.2s ease-in-out;
-    transform: scale(1.2);
     cursor: pointer;
     color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
-    transform: scale(0.99);
+    transform: scale(0.9);
+  }
+`;
+
+export const StyledShuffleIcon = styled(ShuffleIcon)`
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
+  }
+
+  &:active {
+    color: ${({ theme }) => theme.color.nobel};
+  }
+`;
+
+export const StyledRepeatIcon = styled(RepeatIcon)`
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
+  }
+
+  &:active {
+    color: ${({ theme }) => theme.color.nobel};
+  }
+`;
+
+export const StyledSkipPreviousIcon = styled(SkipPreviousIcon)`
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
+  }
+
+  &:active {
+    color: ${({ theme }) => theme.color.nobel};
+  }
+`;
+
+export const StyledSkipNextIcon = styled(SkipNextIcon)`
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
+  }
+
+  &:active {
+    color: ${({ theme }) => theme.color.nobel};
+  }
+`;
+
+export const StyledVolumeOffIcon = styled(VolumeOffIcon)`
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
+  }
+
+  &:active {
+    color: ${({ theme }) => theme.color.nobel};
+  }
+`;
+
+export const StyledVolumeUpIcon = styled(VolumeUpIcon)`
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
+  }
+
+  &:active {
+    color: ${({ theme }) => theme.color.nobel};
+  }
+`;
+
+export const StyledVolumeDownIcon = styled(VolumeDownIcon)`
+  &:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
+  }
+
+  &:active {
+    color: ${({ theme }) => theme.color.nobel};
   }
 `;
