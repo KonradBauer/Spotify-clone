@@ -25,7 +25,7 @@ export const LeftSide = styled.div`
   color: ${({ theme }) => theme.color.gray};
   border-radius: 30px;
   align-items: center;
-  max-width: 250px;
+  max-width: 280px;
   min-width: 80px;
   flex-grow: 1;
   padding: 10px;
@@ -37,6 +37,7 @@ export const RightSide = styled.div`
   justify-self: flex-end;
   color: ${({ theme }) => theme.color.white};
   gap: 10px;
+  margin-left: 20px;
   cursor: pointer;
 `;
 

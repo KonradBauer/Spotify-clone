@@ -48,7 +48,7 @@ export const Player = () => {
         <AlbumLogo
           src="https://cdns-images.dzcdn.net/images/cover/b89c20012cccb051c8a4e04d98386f95/350x350.jpg"
           alt="Album Cover"
-        ></AlbumLogo>
+        />
         <SongInfo>
           <SongTitle>Yeah!</SongTitle>
           <Artist>Usher</Artist>
@@ -58,7 +58,7 @@ export const Player = () => {
         <StyledShuffleIcon />
         <StyledSkipPreviousIcon />
         <span onClick={togglePlayStatus}>
-          {playStatus ? (
+          {!playStatus ? (
             <StyledPlayCircleOutlineIcon fontSize="large" />
           ) : (
             <StyledPauseCircleOutlineIcon fontSize="large" />

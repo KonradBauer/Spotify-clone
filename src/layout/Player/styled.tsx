@@ -18,7 +18,7 @@ export const LeftContent = styled.div`
 
 export const CenterContent = styled.div`
   display: flex;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.nobel};
   align-items: center;
   justify-content: space-between;
   width: 300px;
@@ -27,7 +27,7 @@ export const CenterContent = styled.div`
 
 export const RightContent = styled.div`
   display: flex;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.nobel};
   align-items: center;
   width: 200px;
 `;
@@ -44,17 +44,26 @@ export const SongInfo = styled.div`
 `;
 
 export const SongTitle = styled.div`
-  font-size: 16px;
+  font-size: 0.875rem;
   font-weight: bold;
 `;
 
-export const Artist = styled.div``;
+export const Artist = styled.div`
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: ${({ theme }) => theme.color.nobel};
+
+  &:hover {
+    color: ${({ theme }) => theme.color.white};
+  }
+`;
 
 export const StyledPlayCircleOutlineIcon = styled(PlayCircleOutlineIcon)`
   &:hover {
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -67,6 +76,7 @@ export const StyledShuffleIcon = styled(ShuffleIcon)`
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -79,6 +89,7 @@ export const StyledRepeatIcon = styled(RepeatIcon)`
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -91,6 +102,7 @@ export const StyledSkipPreviousIcon = styled(SkipPreviousIcon)`
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -103,6 +115,7 @@ export const StyledSkipNextIcon = styled(SkipNextIcon)`
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -115,6 +128,7 @@ export const StyledVolumeOffIcon = styled(VolumeOffIcon)`
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -127,6 +141,7 @@ export const StyledVolumeUpIcon = styled(VolumeUpIcon)`
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -139,6 +154,7 @@ export const StyledVolumeDownIcon = styled(VolumeDownIcon)`
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
@@ -151,6 +167,7 @@ export const StyledPauseCircleOutlineIcon = styled(PauseCircleOutlineIcon)`
     transition: 0.2s ease-in-out;
     transform: scale(1.2);
     cursor: pointer;
+    color: ${({ theme }) => theme.color.white};
   }
 
   &:active {
