@@ -109,4 +109,5 @@ export const Line = styled.hr`
 
 export const PlaylistStyle = styled.div`
   margin-bottom: 10px;
+  font-weight: lighter;
 `;
