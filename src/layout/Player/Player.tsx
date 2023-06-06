@@ -21,9 +21,9 @@ import { Slider, Grid } from "@mui/material";
 import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
 
 export const Player = () => {
-  const [volume, setVolume] = useState(100);
-  const [prevVolume, setPrevVolume] = useState(100);
-  const [playStatus, setPlayStatus] = useState(false);
+  const [volume, setVolume] = useState(100 as number);
+  const [prevVolume, setPrevVolume] = useState(100 as number);
+  const [playStatus, setPlayStatus] = useState(false as boolean);
 
   const handleVolumeChange = (event: any, newValue: any) => {
     setVolume(newValue);

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
+import SpotifyWebApi from "spotify-web-api-js";
 import { GlobalContainer } from "./layout/GlobalContainer";
 import { Aside } from "./layout/Aside";
 import { Main } from "./layout/Main";
 import { LoginForm } from "./layout/LoginForm";
 import { getTokenFromUrl } from "./core/getAPI";
-import SpotifyWebApi from "spotify-web-api-js";
 import { useDataLayerValue } from "./core/DataLayer";
 import { Footer } from "./layout/Footer/Footer";
 
